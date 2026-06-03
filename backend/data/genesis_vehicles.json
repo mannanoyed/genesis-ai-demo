@@ -1,0 +1,429 @@
+[
+  {
+    "id": "g70",
+    "name": "Genesis G70",
+    "year": 2024,
+    "type": "Compact Luxury Sedan",
+    "tagline": "Pure driving exhilaration, refined.",
+    "image": "/images/g70.jpg",
+    "engines": [
+      {
+        "name": "2.0L Turbo I4",
+        "horsepower": 252,
+        "torque_nm": 353,
+        "displacement": "2.0L Turbocharged Inline-4"
+      },
+      {
+        "name": "3.3L Twin-Turbo V6",
+        "horsepower": 370,
+        "torque_nm": 510,
+        "displacement": "3.3L Twin-Turbo V6"
+      }
+    ],
+    "transmission": "8-speed automatic",
+    "drivetrain": "RWD / AWD",
+    "zero_to_100_kmh": "4.7 seconds (3.3T)",
+    "dimensions": {
+      "length_mm": 4685,
+      "width_mm": 1850,
+      "height_mm": 1400,
+      "wheelbase_mm": 2835
+    },
+    "seating": 5,
+    "features": {
+      "infotainment": "10.25\" infotainment display",
+      "audio": "Lexicon premium audio",
+      "connectivity": "Genesis Connected Services",
+      "suspension": "Adaptive suspension",
+      "other": ["Navigation", "Wireless Apple CarPlay/Android Auto"]
+    },
+    "safety": {
+      "airbags": 9,
+      "adas": ["Forward Collision Avoidance", "Lane Keep Assist", "Blind Spot Monitor", "Driver Attention Warning", "Rear Cross Traffic Alert"]
+    },
+    "wheels": "18\" or 19\" alloy",
+    "starting_price_aed": 165000,
+    "best_for": "Driving enthusiasts, young professionals, sport-luxury seekers",
+    "competitors": ["BMW 3 Series", "Mercedes C-Class", "Audi A4"],
+    "is_electric": false,
+    "highlights": ["Sport-tuned chassis", "Available twin-turbo V6", "Rear-wheel drive purity", "Lexicon sound system"]
+  },
+  {
+    "id": "g80",
+    "name": "Genesis G80",
+    "year": 2024,
+    "type": "Mid-Size Luxury Sedan",
+    "tagline": "Executive refinement, redefined.",
+    "image": "/images/g80.jpg",
+    "engines": [
+      {
+        "name": "2.5L Turbo I4",
+        "horsepower": 304,
+        "torque_nm": 422,
+        "displacement": "2.5L Turbocharged Inline-4"
+      },
+      {
+        "name": "3.5L Twin-Turbo V6",
+        "horsepower": 380,
+        "torque_nm": 530,
+        "displacement": "3.5L Twin-Turbo V6"
+      }
+    ],
+    "transmission": "8-speed automatic",
+    "drivetrain": "RWD / AWD",
+    "zero_to_100_kmh": "5.1 seconds (3.5T)",
+    "dimensions": {
+      "length_mm": 4995,
+      "width_mm": 1925,
+      "height_mm": 1465,
+      "wheelbase_mm": 3010
+    },
+    "seating": 5,
+    "features": {
+      "infotainment": "14.5\" OLED infotainment display",
+      "cluster": "12.3\" digital instrument cluster",
+      "audio": "Lexicon 21-speaker audio system",
+      "seats": "Ergo-motion seats with massage function",
+      "rear": "Rear seat entertainment system",
+      "other": ["Heads-up display", "Wireless charging", "Panoramic sunroof"]
+    },
+    "safety": {
+      "airbags": 10,
+      "adas": ["Highway Driving Assist II", "Remote Smart Parking Assist", "360-degree cameras", "Blind Spot Monitor", "Forward Collision Avoidance", "Lane Keep Assist"]
+    },
+    "wheels": "19\" or 20\" alloy",
+    "starting_price_aed": 235000,
+    "best_for": "Executive sedan buyers, comfort-focused, Mercedes E-Class alternatives",
+    "competitors": ["Mercedes E-Class", "BMW 5 Series", "Audi A6"],
+    "is_electric": false,
+    "highlights": ["OLED infotainment", "21-speaker Lexicon audio", "Massage seats", "Rear entertainment"]
+  },
+  {
+    "id": "g90",
+    "name": "Genesis G90",
+    "year": 2024,
+    "type": "Full-Size Flagship Luxury Sedan",
+    "tagline": "The pinnacle of Genesis luxury.",
+    "image": "/images/g90.jpg",
+    "engines": [
+      {
+        "name": "3.5L Twin-Turbo V6",
+        "horsepower": 409,
+        "torque_nm": 550,
+        "displacement": "3.5L Twin-Turbo V6"
+      }
+    ],
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD",
+    "zero_to_100_kmh": "5.0 seconds",
+    "dimensions": {
+      "length_mm": 5275,
+      "width_mm": 1930,
+      "height_mm": 1490,
+      "wheelbase_mm": 3180
+    },
+    "seating": "5 (or 4 with executive rear package)",
+    "features": {
+      "infotainment": "Dual 12.3\" curved OLED displays",
+      "audio": "Lexicon 26-speaker Bang & Olufsen-class audio",
+      "rear_seats": "VIP rear seats with ottoman footrests",
+      "privacy": "Power rear curtains",
+      "security": "Fingerprint authentication",
+      "ambiance": "Connoisseur fragrance system",
+      "other": ["Heads-up display", "Massage seats front and rear", "Heated/ventilated all seats"]
+    },
+    "safety": {
+      "airbags": 12,
+      "adas": ["Full ADAS suite", "Remote Parking", "Pre-collision rear warning", "Surround View Monitor", "Highway Driving Assist II"]
+    },
+    "wheels": "20\" or 21\" alloy",
+    "starting_price_aed": 380000,
+    "best_for": "Flagship buyers, chauffeur-driven, executive luxury, S-Class/LS alternatives",
+    "competitors": ["Mercedes S-Class", "BMW 7 Series", "Lexus LS"],
+    "is_electric": false,
+    "v8_note": "Genesis does not offer a V8. The 3.5L Twin-Turbo V6 delivers 409 HP with exceptional efficiency, meeting global emissions standards while rivaling V8 power delivery.",
+    "highlights": ["409 HP twin-turbo", "Dual curved OLED displays", "VIP rear seating", "Fingerprint auth", "Fragrance system"]
+  },
+  {
+    "id": "gv60",
+    "name": "Genesis GV60",
+    "year": 2024,
+    "type": "Compact Electric SUV",
+    "tagline": "Born electric. Crafted to inspire.",
+    "image": "/images/gv60.jpg",
+    "platform": "E-GMP (Hyundai/Kia EV platform)",
+    "motors": [
+      {
+        "name": "Standard AWD",
+        "horsepower": 314,
+        "configuration": "Dual motor AWD"
+      },
+      {
+        "name": "Performance AWD",
+        "horsepower": 429,
+        "boost_hp": 483,
+        "configuration": "Dual motor AWD with boost mode"
+      }
+    ],
+    "battery_kwh": 77.4,
+    "range_km_wltp": 451,
+    "zero_to_100_kmh": "4.0 seconds (Performance)",
+    "fast_charge": "10% to 80% in 18 minutes (350kW DC)",
+    "transmission": "Single-speed reduction gear",
+    "drivetrain": "AWD",
+    "dimensions": {
+      "length_mm": 4515,
+      "width_mm": 1890,
+      "height_mm": 1580,
+      "wheelbase_mm": 2900
+    },
+    "seating": 5,
+    "features": {
+      "gear_selector": "Crystal Sphere rotating gear selector",
+      "biometrics": "Face Connect (facial recognition) + Fingerprint authentication",
+      "audio": "Bang & Olufsen audio system",
+      "v2l": "Vehicle-to-Load (V2L) capability",
+      "other": ["Augmented Reality HUD", "Digital side mirrors (optional)", "Panoramic roof"]
+    },
+    "safety": {
+      "airbags": 9,
+      "adas": ["Full ADAS suite", "Blind Spot Collision Avoidance Assist", "Forward Collision Avoidance", "Lane Centering Assist"]
+    },
+    "wheels": "20\" or 21\"",
+    "starting_price_aed": 250000,
+    "best_for": "Tech-forward buyers, EV early adopters, premium electric SUV seekers",
+    "competitors": ["Tesla Model Y", "BMW iX3", "Audi Q4 e-tron"],
+    "is_electric": true,
+    "highlights": ["Crystal Sphere gear selector", "Facial recognition", "18-min fast charge", "Bang & Olufsen audio", "V2L capability"]
+  },
+  {
+    "id": "gv70",
+    "name": "Genesis GV70",
+    "year": 2024,
+    "type": "Compact Luxury SUV",
+    "tagline": "Performance and elegance, perfectly balanced.",
+    "image": "/images/gv70.jpg",
+    "engines": [
+      {
+        "name": "2.5L Turbo I4",
+        "horsepower": 304,
+        "torque_nm": 422,
+        "displacement": "2.5L Turbocharged Inline-4"
+      },
+      {
+        "name": "3.5L Twin-Turbo V6",
+        "horsepower": 380,
+        "torque_nm": 530,
+        "displacement": "3.5L Twin-Turbo V6"
+      }
+    ],
+    "transmission": "8-speed automatic",
+    "drivetrain": "RWD / AWD",
+    "zero_to_100_kmh": "5.1 seconds (3.5T)",
+    "dimensions": {
+      "length_mm": 4715,
+      "width_mm": 1910,
+      "height_mm": 1630,
+      "wheelbase_mm": 2875
+    },
+    "seating": 5,
+    "features": {
+      "infotainment": "14.5\" infotainment display",
+      "audio": "Lexicon premium audio",
+      "terrain": "Electronic terrain mode selector",
+      "sport": "Sport+ mode",
+      "roof": "Panoramic sunroof",
+      "other": ["Digital instrument cluster", "Heads-up display", "Wireless charging"]
+    },
+    "safety": {
+      "airbags": 9,
+      "adas": ["Full ADAS suite", "Forward Collision Avoidance with Pedestrian/Cyclist Detection", "Lane Keep Assist", "Blind Spot Monitor", "Rear Cross Traffic Alert"]
+    },
+    "wheels": "19\" or 21\"",
+    "starting_price_aed": 210000,
+    "best_for": "Active lifestyle, compact luxury SUV, GLC/X3 alternative",
+    "competitors": ["Mercedes GLC", "BMW X3", "Audi Q5"],
+    "is_electric": false,
+    "highlights": ["Crest grille design", "Sport+ mode", "14.5\" display", "Available 380 HP twin-turbo"]
+  },
+  {
+    "id": "gv80",
+    "name": "Genesis GV80",
+    "year": 2024,
+    "type": "Mid-Size Luxury SUV",
+    "tagline": "Commanding presence. Uncompromising luxury.",
+    "image": "/images/gv80.jpg",
+    "engines": [
+      {
+        "name": "2.5L Turbo I4",
+        "horsepower": 304,
+        "torque_nm": 422,
+        "displacement": "2.5L Turbocharged Inline-4"
+      },
+      {
+        "name": "3.5L Twin-Turbo V6",
+        "horsepower": 380,
+        "torque_nm": 530,
+        "displacement": "3.5L Twin-Turbo V6"
+      }
+    ],
+    "transmission": "8-speed automatic",
+    "drivetrain": "RWD / AWD",
+    "zero_to_100_kmh": "5.3 seconds (3.5T)",
+    "dimensions": {
+      "length_mm": 4945,
+      "width_mm": 1975,
+      "height_mm": 1715,
+      "wheelbase_mm": 2955
+    },
+    "seating": "5, 6, or 7 depending on configuration",
+    "features": {
+      "infotainment": "14.5\" OLED infotainment display",
+      "audio": "Lexicon 21-speaker audio",
+      "seating_config": "Captain chairs available in 6-seat configuration",
+      "third_row": "Optional 3rd row seating",
+      "suspension": "Advanced air suspension",
+      "diff": "Electronic limited-slip differential",
+      "other": ["Panoramic sunroof", "Heated/ventilated seats", "Wireless charging"]
+    },
+    "safety": {
+      "airbags": 10,
+      "adas": ["Full ADAS suite", "Highway Driving Assist II", "Remote Smart Parking", "360-degree cameras", "Blind Spot Monitor"]
+    },
+    "wheels": "20\" or 22\"",
+    "starting_price_aed": 265000,
+    "best_for": "Families, those upgrading from GLE/X5, luxury 3-row SUV seekers",
+    "competitors": ["Mercedes GLE", "BMW X5", "Audi Q7", "Lexus RX"],
+    "is_electric": false,
+    "family_note": "With 3-row seating, the GV80 is Genesis' most family-friendly vehicle, offering captain chairs in 6-seat configuration.",
+    "highlights": ["3-row seating option", "21-speaker Lexicon", "Air suspension", "OLED display", "Up to 7 seats"]
+  },
+  {
+    "id": "gv80-coupe",
+    "name": "Genesis GV80 Coupe",
+    "year": 2024,
+    "type": "Mid-Size Luxury Coupe SUV",
+    "tagline": "Bold lines. Boundless performance.",
+    "image": "/images/gv80-coupe.jpg",
+    "engines": [
+      {
+        "name": "3.5L Twin-Turbo V6",
+        "horsepower": 380,
+        "torque_nm": 530,
+        "displacement": "3.5L Twin-Turbo V6"
+      }
+    ],
+    "transmission": "8-speed automatic",
+    "drivetrain": "AWD",
+    "zero_to_100_kmh": "5.3 seconds",
+    "dimensions": {
+      "length_mm": 4945,
+      "width_mm": 1975,
+      "height_mm": 1665,
+      "wheelbase_mm": 2955,
+      "note": "Lower roofline vs standard GV80"
+    },
+    "seating": 5,
+    "features": {
+      "design": "Coupe-style sloping roofline",
+      "suspension": "Sport-tuned suspension",
+      "wheels_standard": "22\" wheels standard",
+      "interior": "Unique sport interior trim",
+      "other": ["14.5\" OLED display", "Lexicon audio", "Panoramic roof"]
+    },
+    "safety": {
+      "airbags": 10,
+      "adas": ["Full ADAS suite", "Blind Spot Monitor", "Forward Collision Avoidance"]
+    },
+    "wheels": "22\" alloy (standard)",
+    "starting_price_aed": 310000,
+    "best_for": "Style-conscious buyers, GLE Coupe / X6 alternative",
+    "competitors": ["Mercedes GLE Coupe", "BMW X6", "Audi Q8"],
+    "is_electric": false,
+    "highlights": ["Coupe roofline", "22\" standard wheels", "Sport suspension", "Exclusive to GV80 Coupe lineup"]
+  },
+  {
+    "id": "electrified-g80",
+    "name": "Genesis Electrified G80",
+    "year": 2024,
+    "type": "Mid-Size Electric Luxury Sedan",
+    "tagline": "Silence elevated to an art form.",
+    "image": "/images/electrified-g80.jpg",
+    "motor": {
+      "configuration": "Dual motor AWD",
+      "horsepower": 365
+    },
+    "battery_kwh": 87.2,
+    "range_km_wltp": 427,
+    "zero_to_100_kmh": "4.9 seconds",
+    "fast_charge": "10% to 80% in 22 minutes (350kW DC)",
+    "drivetrain": "AWD",
+    "dimensions": {
+      "note": "Same dimensions as G80",
+      "length_mm": 4995,
+      "width_mm": 1925,
+      "height_mm": 1465,
+      "wheelbase_mm": 3010
+    },
+    "seating": 5,
+    "features": {
+      "solar_roof": "Solar roof for supplemental charging",
+      "noise": "Active noise cancellation",
+      "v2l": "Vehicle-to-Load (V2L) capability",
+      "drive_modes": "Disconnector actuator system for RWD-only efficiency mode",
+      "other": ["14.5\" OLED display", "Lexicon audio", "Massage seats"]
+    },
+    "safety": {
+      "airbags": 10,
+      "adas": ["Full ADAS suite", "Highway Driving Assist II", "Remote Smart Parking"]
+    },
+    "wheels": "19\" or 20\"",
+    "starting_price_aed": 330000,
+    "best_for": "Executive EV buyers, luxury electric sedan seekers",
+    "competitors": ["Mercedes EQE", "BMW i5", "Tesla Model S"],
+    "is_electric": true,
+    "highlights": ["Solar roof charging", "365 HP dual motor", "V2L capability", "RWD efficiency mode", "Zero emissions"]
+  },
+  {
+    "id": "electrified-gv70",
+    "name": "Genesis Electrified GV70",
+    "year": 2024,
+    "type": "Compact Electric Luxury SUV",
+    "tagline": "Electrified. Exhilarating. Exceptional.",
+    "image": "/images/electrified-gv70.jpg",
+    "motor": {
+      "configuration": "Dual motor AWD",
+      "horsepower": 429,
+      "boost_hp": 483
+    },
+    "battery_kwh": 77.4,
+    "range_km_wltp": 400,
+    "zero_to_100_kmh": "4.2 seconds",
+    "fast_charge": "10% to 80% in 18 minutes (350kW DC)",
+    "drivetrain": "AWD",
+    "dimensions": {
+      "note": "Same dimensions as GV70",
+      "length_mm": 4715,
+      "width_mm": 1910,
+      "height_mm": 1630,
+      "wheelbase_mm": 2875
+    },
+    "seating": 5,
+    "features": {
+      "interior": "Full GV70 luxury interior",
+      "v2l": "Vehicle-to-Load (V2L) capability",
+      "boost": "Boost mode for instant power surge",
+      "other": ["14.5\" display", "Lexicon audio", "Panoramic roof", "EV-specific drive modes"]
+    },
+    "safety": {
+      "airbags": 9,
+      "adas": ["Full ADAS suite", "Forward Collision Avoidance", "Lane Keep Assist"]
+    },
+    "wheels": "19\" or 21\"",
+    "starting_price_aed": 290000,
+    "best_for": "Premium electric SUV buyers, EQC/iX3 alternative",
+    "competitors": ["Mercedes EQB", "BMW iX3", "Audi Q4 e-tron"],
+    "is_electric": true,
+    "highlights": ["483 HP boost mode", "18-min fast charge", "V2L", "GV70 luxury interior", "0-100 in 4.2s"]
+  }
+]

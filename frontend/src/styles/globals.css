@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --genesis-copper: #C4956A;
+    --genesis-gold: #D4AF37;
+    --genesis-silver: #C0C0C0;
+    --genesis-black: #0D0D0D;
+    --genesis-charcoal: #1A1A1A;
+  }
+
+  html, body {
+    @apply bg-genesis-black text-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #C4956A transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #C4956A;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .genesis-card {
+    @apply bg-genesis-charcoal border border-genesis-border rounded-lg;
+  }
+
+  .genesis-btn {
+    @apply bg-transparent border border-genesis-copper text-genesis-copper
+           px-6 py-3 rounded-sm text-sm font-medium tracking-widest uppercase
+           hover:bg-genesis-copper hover:text-black
+           transition-all duration-300 cursor-pointer;
+  }
+
+  .genesis-btn-primary {
+    @apply bg-genesis-copper text-black px-8 py-4 rounded-sm text-sm
+           font-semibold tracking-widest uppercase
+           hover:bg-genesis-gold
+           transition-all duration-300 cursor-pointer;
+  }
+
+  .tab-active {
+    @apply text-genesis-copper border-b-2 border-genesis-copper;
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255,255,255,0.03) 25%,
+      rgba(196, 149, 106, 0.1) 50%,
+      rgba(255,255,255,0.03) 75%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s linear infinite;
+  }
+}
+
+@layer utilities {
+  .text-gradient-copper {
+    background: linear-gradient(135deg, #C4956A, #D4AF37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-gradient-copper {
+    border-image: linear-gradient(135deg, #C4956A, #D4AF37) 1;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* RTL support for Arabic */
+[dir="rtl"] {
+  font-family: 'Inter', 'Noto Sans Arabic', 'Arial', sans-serif;
+}
+
+/* Waveform bars */
+.waveform-bar {
+  display: inline-block;
+  width: 3px;
+  border-radius: 2px;
+  transform-origin: bottom center;
+}
+
+/* Orb glow effect */
+.orb-glow {
+  box-shadow:
+    0 0 20px rgba(196, 149, 106, 0.4),
+    0 0 60px rgba(196, 149, 106, 0.2),
+    0 0 100px rgba(196, 149, 106, 0.1);
+}
+
+.orb-glow-active {
+  box-shadow:
+    0 0 30px rgba(196, 149, 106, 0.6),
+    0 0 80px rgba(196, 149, 106, 0.4),
+    0 0 140px rgba(196, 149, 106, 0.2);
+}

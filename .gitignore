@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+*.env.local
+
+# Database & vector store (Railway uses ephemeral storage; seed on startup)
+backend/leads.db
+backend/chroma_db/
+
+# Frontend build artifacts (Railway builds these)
+frontend/node_modules/
+frontend/dist/
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/

@@ -1,0 +1,72 @@
+[
+  {
+    "id": "faq_v8",
+    "question": "Why doesn't Genesis have a V8 engine?",
+    "answer": "Genesis has strategically chosen turbocharged V6 and inline-4 engines alongside electric powertrains. The 3.5L Twin-Turbo V6 delivers up to 409 HP — comparable to many V8 engines — while offering better fuel efficiency and lower emissions. Genesis is investing heavily in electrification with the GV60, Electrified G80, and Electrified GV70 in the lineup. The brand is moving toward an all-electric future by 2030.",
+    "category": "brand",
+    "keywords": ["v8", "engine", "horsepower", "v6", "turbo"]
+  },
+  {
+    "id": "faq_warranty",
+    "question": "What warranty does Genesis offer?",
+    "answer": "Genesis offers an industry-leading 5-year/unlimited km warranty in the UAE, with 5-year roadside assistance and complimentary scheduled maintenance included.",
+    "category": "ownership",
+    "keywords": ["warranty", "service", "maintenance", "roadside assistance"]
+  },
+  {
+    "id": "faq_showrooms",
+    "question": "Where are Genesis showrooms in the UAE?",
+    "answer": "Genesis has showrooms in Dubai, Abu Dhabi, and Sharjah, operated through their authorized distributor network. You can also schedule test drives through any showroom.",
+    "category": "brand",
+    "keywords": ["showroom", "location", "dubai", "uae", "abu dhabi", "sharjah", "dealership"]
+  },
+  {
+    "id": "faq_brand",
+    "question": "What is Genesis and what are they known for?",
+    "answer": "Genesis is the luxury division of Hyundai Motor Group. The brand is known for athletic elegance in design, exceptional value in the luxury segment, advanced technology, and top safety ratings. Genesis consistently wins awards for design and value, competing directly with established German luxury brands at more competitive price points.",
+    "category": "brand",
+    "keywords": ["genesis", "brand", "hyundai", "luxury", "awards", "reputation"]
+  },
+  {
+    "id": "faq_electric",
+    "question": "What electric vehicles does Genesis offer?",
+    "answer": "Genesis offers three electric vehicles: the GV60 (compact electric SUV, 451km range), the Electrified G80 (luxury electric sedan, 427km range), and the Electrified GV70 (compact electric SUV, 400km range). All support ultra-fast charging from 10% to 80% in 18-22 minutes at 350kW DC chargers.",
+    "category": "electric",
+    "keywords": ["electric", "ev", "battery", "range", "charging", "zero emission", "gv60", "electrified"]
+  },
+  {
+    "id": "faq_charging",
+    "question": "How do you charge a Genesis electric vehicle?",
+    "answer": "Genesis electric vehicles support ultra-fast DC charging up to 350kW, allowing 10% to 80% charge in just 18 minutes (GV60/Electrified GV70) or 22 minutes (Electrified G80). They also support standard AC charging at home. The Electrified G80 even features a solar roof for supplemental charging.",
+    "category": "electric",
+    "keywords": ["charging", "charge", "fast charge", "dc", "ac", "home charging", "minutes"]
+  },
+  {
+    "id": "faq_vs_german",
+    "question": "How does Genesis compare to German luxury brands like Mercedes, BMW, Audi?",
+    "answer": "Genesis offers comparable or superior specifications and features to German luxury brands, typically at 10-20% more competitive price points. Genesis vehicles consistently score highly in safety ratings, reliability surveys, and owner satisfaction. Additionally, Genesis offers an industry-leading 5-year unlimited km warranty — significantly more generous than most German competitors. The brand brings fresh, distinctive Korean design philosophy rather than following established European styling conventions.",
+    "category": "comparison",
+    "keywords": ["mercedes", "bmw", "audi", "german", "compare", "better", "difference", "versus"]
+  },
+  {
+    "id": "faq_test_drive",
+    "question": "Can I schedule a test drive?",
+    "answer": "Absolutely — a test drive is the best way to experience Genesis. You can arrange a test drive at any of our UAE showrooms in Dubai, Abu Dhabi, or Sharjah. Our team can schedule this for you at your convenience, and we'll bring the vehicle to you if preferred.",
+    "category": "ownership",
+    "keywords": ["test drive", "drive", "schedule", "appointment", "try", "experience"]
+  },
+  {
+    "id": "faq_financing",
+    "question": "What financing options are available?",
+    "answer": "Genesis vehicles in the UAE are available through various financing options including bank loans and in-house financing. Our showroom specialists can connect you with tailored financing plans with competitive rates. Please speak with our finance team for current rates and promotions.",
+    "category": "ownership",
+    "keywords": ["finance", "loan", "installment", "monthly", "payment", "buy", "purchase"]
+  },
+  {
+    "id": "faq_family",
+    "question": "Which Genesis is best for a family?",
+    "answer": "The Genesis GV80 is our most family-friendly vehicle, offering seating for 5, 6, or 7 passengers with an optional 3rd row. The 6-seat configuration features captain chairs for premium comfort in the second row. The GV70 is also excellent for smaller families, offering the perfect blend of practicality and performance.",
+    "category": "recommendation",
+    "keywords": ["family", "kids", "children", "seats", "3rd row", "7 seats", "space"]
+  }
+]

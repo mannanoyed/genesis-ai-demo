@@ -1,0 +1,494 @@
+[
+  {
+    "id": "g70",
+    "name": "Genesis G70",
+    "type": "Compact Luxury Sedan",
+    "tagline": "Pure driving exhilaration, refined.",
+    "image": "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 165,000",
+    "badge": "Sport",
+    "isElectric": false,
+    "specs": {
+      "performance": {
+        "Engine": "2.0L Turbo I4 / 3.3L Twin-Turbo V6",
+        "Horsepower": "252 HP / 370 HP",
+        "Torque": "353 Nm / 510 Nm",
+        "0-100 km/h": "4.7 seconds (3.3T)",
+        "Transmission": "8-speed automatic",
+        "Drivetrain": "RWD / AWD"
+      },
+      "dimensions": {
+        "Length": "4,685 mm",
+        "Width": "1,850 mm",
+        "Height": "1,400 mm",
+        "Wheelbase": "2,835 mm",
+        "Seating": "5 passengers"
+      },
+      "interior": {
+        "Infotainment": "10.25\" touchscreen display",
+        "Audio": "Lexicon premium audio system",
+        "Connectivity": "Genesis Connected Services",
+        "Suspension": "Adaptive suspension",
+        "Features": "Wireless Apple CarPlay / Android Auto, Navigation"
+      },
+      "safety": {
+        "Airbags": "9 airbags",
+        "Forward Collision Avoidance": "Standard",
+        "Lane Keep Assist": "Standard",
+        "Blind Spot Monitor": "Standard",
+        "Driver Attention Warning": "Standard",
+        "Rear Cross Traffic Alert": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "18\" or 19\" alloy",
+        "Tire Spec": "225/40R18 or 225/35R19"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 165,000",
+        "2.0T Base": "AED 165,000",
+        "3.3T Sport+": "AED 195,000",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["Sport-tuned chassis", "Available 370 HP twin-turbo V6", "Rear-wheel drive option", "Lexicon sound"],
+    "competitors": ["BMW 3 Series", "Mercedes C-Class", "Audi A4"],
+    "bestFor": "Driving enthusiasts, young professionals, sport-luxury seekers"
+  },
+  {
+    "id": "g80",
+    "name": "Genesis G80",
+    "type": "Mid-Size Luxury Sedan",
+    "tagline": "Executive refinement, redefined.",
+    "image": "https://images.unsplash.com/photo-1555215695-3004980ad54e?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 235,000",
+    "badge": "Executive",
+    "isElectric": false,
+    "specs": {
+      "performance": {
+        "Engine": "2.5L Turbo I4 / 3.5L Twin-Turbo V6",
+        "Horsepower": "304 HP / 380 HP",
+        "Torque": "422 Nm / 530 Nm",
+        "0-100 km/h": "5.1 seconds (3.5T)",
+        "Transmission": "8-speed automatic",
+        "Drivetrain": "RWD / AWD"
+      },
+      "dimensions": {
+        "Length": "4,995 mm",
+        "Width": "1,925 mm",
+        "Height": "1,465 mm",
+        "Wheelbase": "3,010 mm",
+        "Seating": "5 passengers"
+      },
+      "interior": {
+        "Infotainment": "14.5\" OLED touchscreen",
+        "Cluster": "12.3\" digital instrument cluster",
+        "Audio": "Lexicon 21-speaker premium audio",
+        "Seats": "Ergo-motion seats with massage",
+        "Rear Entertainment": "Rear seat entertainment system",
+        "Extra": "Heads-up display, Wireless charging, Panoramic sunroof"
+      },
+      "safety": {
+        "Airbags": "10 airbags",
+        "Highway Driving Assist II": "Standard",
+        "Remote Smart Parking": "Standard",
+        "360-Degree Cameras": "Standard",
+        "Blind Spot Monitor": "Standard",
+        "Forward Collision Avoidance": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "19\" or 20\" alloy",
+        "Tire Spec": "235/50R19 or 245/40R20"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 235,000",
+        "2.5T": "AED 235,000",
+        "3.5T AWD": "AED 285,000",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["14.5\" OLED display", "21-speaker Lexicon audio", "Massage seats", "Rear entertainment"],
+    "competitors": ["Mercedes E-Class", "BMW 5 Series", "Audi A6"],
+    "bestFor": "Executive sedan buyers, comfort-focused, Mercedes E-Class alternatives"
+  },
+  {
+    "id": "g90",
+    "name": "Genesis G90",
+    "type": "Flagship Luxury Sedan",
+    "tagline": "The pinnacle of Genesis luxury.",
+    "image": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 380,000",
+    "badge": "Flagship",
+    "isElectric": false,
+    "specs": {
+      "performance": {
+        "Engine": "3.5L Twin-Turbo V6",
+        "Horsepower": "409 HP",
+        "Torque": "550 Nm",
+        "0-100 km/h": "5.0 seconds",
+        "Transmission": "8-speed automatic",
+        "Drivetrain": "AWD (standard)"
+      },
+      "dimensions": {
+        "Length": "5,275 mm",
+        "Width": "1,930 mm",
+        "Height": "1,490 mm",
+        "Wheelbase": "3,180 mm",
+        "Seating": "5 (or 4 with executive rear package)"
+      },
+      "interior": {
+        "Displays": "Dual 12.3\" curved OLED screens",
+        "Audio": "Lexicon 26-speaker B&O-class audio",
+        "Rear Seats": "VIP seats with ottoman footrests",
+        "Privacy": "Power rear curtains",
+        "Authentication": "Fingerprint scanner",
+        "Ambiance": "Connoisseur fragrance diffuser system",
+        "Extra": "Massage all seats, Heated/ventilated all seats"
+      },
+      "safety": {
+        "Airbags": "12 airbags",
+        "Full ADAS Suite": "Standard",
+        "Remote Parking Assist": "Standard",
+        "Pre-Collision Rear": "Standard",
+        "Surround View Monitor": "Standard",
+        "Highway Driving Assist II": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "20\" or 21\" alloy",
+        "Tire Spec": "245/45R20 or 245/40R21"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 380,000",
+        "3.5T AWD": "AED 380,000",
+        "Executive Long Wheelbase": "AED 420,000+",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["409 HP twin-turbo V6", "Dual curved OLED displays", "VIP rear seating", "Fingerprint auth", "Fragrance system"],
+    "competitors": ["Mercedes S-Class", "BMW 7 Series", "Lexus LS"],
+    "bestFor": "Flagship buyers, chauffeur-driven, S-Class alternatives"
+  },
+  {
+    "id": "gv60",
+    "name": "Genesis GV60",
+    "type": "Compact Electric SUV",
+    "tagline": "Born electric. Crafted to inspire.",
+    "image": "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 250,000",
+    "badge": "Electric",
+    "isElectric": true,
+    "specs": {
+      "performance": {
+        "Motor": "Dual Motor AWD",
+        "Horsepower": "314 HP / 429 HP (Performance)",
+        "Boost Mode": "483 HP (Performance AWD)",
+        "0-100 km/h": "4.0 seconds (Performance)",
+        "Battery": "77.4 kWh",
+        "Range (WLTP)": "451 km"
+      },
+      "dimensions": {
+        "Length": "4,515 mm",
+        "Width": "1,890 mm",
+        "Height": "1,580 mm",
+        "Wheelbase": "2,900 mm",
+        "Seating": "5 passengers"
+      },
+      "interior": {
+        "Gear Selector": "Crystal Sphere rotating sphere",
+        "Biometrics": "Face Connect + Fingerprint auth",
+        "Audio": "Bang & Olufsen premium audio",
+        "V2L": "Vehicle-to-Load capability",
+        "Extra": "AR HUD, Digital side mirrors, Panoramic roof"
+      },
+      "safety": {
+        "Airbags": "9 airbags",
+        "Full ADAS Suite": "Standard",
+        "Blind Spot Collision Avoidance": "Standard",
+        "Forward Collision Avoidance": "Standard",
+        "Lane Centering Assist": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "20\" or 21\"",
+        "Tire Spec": "235/50R20 or 255/45R21"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 250,000",
+        "Standard AWD": "AED 250,000",
+        "Performance AWD": "AED 295,000",
+        "Fast Charge (10-80%)": "18 minutes at 350kW DC",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["Crystal Sphere gear selector", "Facial recognition", "18-min ultra-fast charge", "Bang & Olufsen audio"],
+    "competitors": ["Tesla Model Y", "BMW iX3", "Audi Q4 e-tron"],
+    "bestFor": "Tech-forward buyers, EV enthusiasts, premium electric SUV seekers"
+  },
+  {
+    "id": "gv70",
+    "name": "Genesis GV70",
+    "type": "Compact Luxury SUV",
+    "tagline": "Performance and elegance, perfectly balanced.",
+    "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 210,000",
+    "badge": "Popular",
+    "isElectric": false,
+    "specs": {
+      "performance": {
+        "Engine": "2.5L Turbo I4 / 3.5L Twin-Turbo V6",
+        "Horsepower": "304 HP / 380 HP",
+        "Torque": "422 Nm / 530 Nm",
+        "0-100 km/h": "5.1 seconds (3.5T)",
+        "Transmission": "8-speed automatic",
+        "Drivetrain": "RWD / AWD"
+      },
+      "dimensions": {
+        "Length": "4,715 mm",
+        "Width": "1,910 mm",
+        "Height": "1,630 mm",
+        "Wheelbase": "2,875 mm",
+        "Seating": "5 passengers"
+      },
+      "interior": {
+        "Infotainment": "14.5\" touchscreen display",
+        "Audio": "Lexicon premium audio",
+        "Terrain Modes": "Electronic terrain mode selector",
+        "Sport Mode": "Sport+ drive mode",
+        "Roof": "Panoramic sunroof",
+        "Extra": "Digital cluster, HUD, Wireless charging"
+      },
+      "safety": {
+        "Airbags": "9 airbags",
+        "Full ADAS Suite": "Standard",
+        "Pedestrian Detection": "Forward Collision Avoidance with pedestrian/cyclist detection",
+        "Lane Keep Assist": "Standard",
+        "Blind Spot Monitor": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "19\" or 21\" alloy",
+        "Tire Spec": "235/55R19 or 235/45R21"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 210,000",
+        "2.5T": "AED 210,000",
+        "3.5T AWD": "AED 255,000",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["Crest grille design", "Sport+ drive mode", "14.5\" display", "380 HP twin-turbo available"],
+    "competitors": ["Mercedes GLC", "BMW X3", "Audi Q5"],
+    "bestFor": "Active lifestyle, compact luxury SUV buyers"
+  },
+  {
+    "id": "gv80",
+    "name": "Genesis GV80",
+    "type": "Mid-Size Luxury SUV",
+    "tagline": "Commanding presence. Uncompromising luxury.",
+    "image": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 265,000",
+    "badge": "Family",
+    "isElectric": false,
+    "specs": {
+      "performance": {
+        "Engine": "2.5L Turbo I4 / 3.5L Twin-Turbo V6",
+        "Horsepower": "304 HP / 380 HP",
+        "Torque": "422 Nm / 530 Nm",
+        "0-100 km/h": "5.3 seconds (3.5T)",
+        "Transmission": "8-speed automatic",
+        "Drivetrain": "RWD / AWD"
+      },
+      "dimensions": {
+        "Length": "4,945 mm",
+        "Width": "1,975 mm",
+        "Height": "1,715 mm",
+        "Wheelbase": "2,955 mm",
+        "Seating": "5, 6, or 7 passengers"
+      },
+      "interior": {
+        "Infotainment": "14.5\" OLED touchscreen",
+        "Audio": "Lexicon 21-speaker audio",
+        "Seating Config": "Captain chairs available (6-seat)",
+        "3rd Row": "Optional 3rd row seating (7-seat)",
+        "Suspension": "Advanced air suspension",
+        "Diff": "Electronic limited-slip differential"
+      },
+      "safety": {
+        "Airbags": "10 airbags",
+        "Full ADAS Suite": "Standard",
+        "Highway Driving Assist II": "Standard",
+        "Remote Smart Parking": "Standard",
+        "360-Degree Cameras": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "20\" or 22\" alloy",
+        "Tire Spec": "265/45R20 or 275/40R22"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 265,000",
+        "2.5T 5-seat": "AED 265,000",
+        "3.5T AWD 7-seat": "AED 320,000",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["7-seat option", "21-speaker Lexicon", "Air suspension", "OLED display", "Captain chairs"],
+    "competitors": ["Mercedes GLE", "BMW X5", "Audi Q7", "Lexus RX"],
+    "bestFor": "Families, luxury 3-row SUV seekers"
+  },
+  {
+    "id": "gv80-coupe",
+    "name": "Genesis GV80 Coupe",
+    "type": "Luxury Coupe SUV",
+    "tagline": "Bold lines. Boundless performance.",
+    "image": "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 310,000",
+    "badge": "Coupe",
+    "isElectric": false,
+    "specs": {
+      "performance": {
+        "Engine": "3.5L Twin-Turbo V6",
+        "Horsepower": "380 HP",
+        "Torque": "530 Nm",
+        "0-100 km/h": "5.3 seconds",
+        "Transmission": "8-speed automatic",
+        "Drivetrain": "AWD (standard)"
+      },
+      "dimensions": {
+        "Length": "4,945 mm",
+        "Width": "1,975 mm",
+        "Height": "1,665 mm (lower roofline)",
+        "Wheelbase": "2,955 mm",
+        "Seating": "5 passengers"
+      },
+      "interior": {
+        "Design": "Distinctive coupe-style interior trim",
+        "Infotainment": "14.5\" OLED touchscreen",
+        "Audio": "Lexicon premium audio",
+        "Roof": "Panoramic sunroof",
+        "Extra": "Sport-themed interior accents"
+      },
+      "safety": {
+        "Airbags": "10 airbags",
+        "Full ADAS Suite": "Standard",
+        "Blind Spot Monitor": "Standard",
+        "Forward Collision Avoidance": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "22\" alloy (standard)",
+        "Tire Spec": "275/40R22"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 310,000",
+        "3.5T AWD": "AED 310,000",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["Coupe roofline", "22\" standard wheels", "Sport-tuned suspension", "Unique interior"],
+    "competitors": ["Mercedes GLE Coupe", "BMW X6", "Audi Q8"],
+    "bestFor": "Style-conscious buyers wanting SUV practicality with coupe aesthetics"
+  },
+  {
+    "id": "electrified-g80",
+    "name": "Electrified G80",
+    "type": "Electric Luxury Sedan",
+    "tagline": "Silence elevated to an art form.",
+    "image": "https://images.unsplash.com/photo-1620891549027-942fdc95d3f5?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 330,000",
+    "badge": "Electric",
+    "isElectric": true,
+    "specs": {
+      "performance": {
+        "Motor": "Dual Motor AWD",
+        "Horsepower": "365 HP",
+        "0-100 km/h": "4.9 seconds",
+        "Battery": "87.2 kWh",
+        "Range (WLTP)": "427 km",
+        "Fast Charge (10-80%)": "22 minutes at 350kW DC"
+      },
+      "dimensions": {
+        "Length": "4,995 mm",
+        "Width": "1,925 mm",
+        "Height": "1,465 mm",
+        "Wheelbase": "3,010 mm",
+        "Seating": "5 passengers"
+      },
+      "interior": {
+        "Solar Roof": "Solar roof for supplemental charging",
+        "Noise Cancellation": "Active noise cancellation system",
+        "V2L": "Vehicle-to-Load (power external devices)",
+        "Drive Modes": "RWD efficiency mode via actuator system",
+        "Infotainment": "14.5\" OLED display",
+        "Audio": "Lexicon premium audio"
+      },
+      "safety": {
+        "Airbags": "10 airbags",
+        "Full ADAS Suite": "Standard",
+        "Highway Driving Assist II": "Standard",
+        "Remote Smart Parking": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "19\" or 20\" alloy",
+        "Tire Spec": "235/50R19 or 245/40R20"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 330,000",
+        "Electrified AWD": "AED 330,000",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["Solar roof charging", "365 HP dual motor", "V2L capability", "RWD efficiency mode"],
+    "competitors": ["Mercedes EQE", "BMW i5", "Tesla Model S"],
+    "bestFor": "Executive EV buyers, luxury electric sedan seekers"
+  },
+  {
+    "id": "electrified-gv70",
+    "name": "Electrified GV70",
+    "type": "Electric Compact SUV",
+    "tagline": "Electrified. Exhilarating. Exceptional.",
+    "image": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=1200&q=80&auto=format&fit=crop",
+    "startingPrice": "AED 290,000",
+    "badge": "Electric",
+    "isElectric": true,
+    "specs": {
+      "performance": {
+        "Motor": "Dual Motor AWD",
+        "Horsepower": "429 HP (483 HP boost)",
+        "0-100 km/h": "4.2 seconds",
+        "Battery": "77.4 kWh",
+        "Range (WLTP)": "400 km",
+        "Fast Charge (10-80%)": "18 minutes at 350kW DC"
+      },
+      "dimensions": {
+        "Length": "4,715 mm",
+        "Width": "1,910 mm",
+        "Height": "1,630 mm",
+        "Wheelbase": "2,875 mm",
+        "Seating": "5 passengers"
+      },
+      "interior": {
+        "Interior": "Full GV70 luxury interior",
+        "V2L": "Vehicle-to-Load capability",
+        "Boost Mode": "Instant power surge up to 483 HP",
+        "Drive Modes": "EV-specific drive modes",
+        "Infotainment": "14.5\" display",
+        "Audio": "Lexicon premium audio"
+      },
+      "safety": {
+        "Airbags": "9 airbags",
+        "Full ADAS Suite": "Standard",
+        "Forward Collision Avoidance": "Standard",
+        "Lane Keep Assist": "Standard"
+      },
+      "wheels": {
+        "Rim Size": "19\" or 21\" alloy",
+        "Tire Spec": "235/55R19 or 235/45R21"
+      },
+      "pricing": {
+        "Starting MSRP (AED)": "AED 290,000",
+        "Electrified AWD": "AED 290,000",
+        "Fast Charge (10-80%)": "18 minutes at 350kW DC",
+        "Note": "Prices are indicative. Contact showroom for current offers."
+      }
+    },
+    "highlights": ["483 HP boost mode", "18-min fast charge", "V2L", "GV70 luxury interior", "0-100 in 4.2s"],
+    "competitors": ["Mercedes EQB", "BMW iX3", "Audi Q4 e-tron"],
+    "bestFor": "Premium electric SUV buyers wanting power and luxury"
+  }
+]
