@@ -32,12 +32,13 @@ async def transcribe(
         if len(audio_bytes) < 100:
             raise HTTPException(status_code=400, detail="Audio file too small or empty.")
 
-        result = await transcribe_audio(audio_bytes, content_type)
+        result = await transcribe_audio(audio_bytes, content_type, hint_language=language)
 
         return {
             "text": result["text"],
             "language": result["language"],
             "success": True,
+            "discarded": result.get("discarded", False),
         }
 
     except HTTPException:

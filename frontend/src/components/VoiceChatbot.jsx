@@ -38,7 +38,10 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
     onSpeakEnd: () => {
       setVoiceState('idle')
       if (autoListen) {
-        setTimeout(() => startRecording(), 500)
+        // Use a longer delay (1200ms) so the speaker audio fully decays before
+        // we open the mic. This prevents the mic from capturing the tail of
+        // the AI's speech, which causes Whisper hallucinations (e.g. Korean).
+        setTimeout(() => startRecording(), 1200)
       }
     },
     onError: () => setVoiceState('idle'),
@@ -50,6 +53,10 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
     try {
       const formData = new FormData()
       formData.append('audio', audioBlob, `recording.${mimeType.split('/')[1]?.split(';')[0] || 'webm'}`)
+      // Pass the UI language as a hint so Whisper is pinned to the correct
+      // language and won't hallucinate Korean (or other languages) when the
+      // mic picks up echo/overlap from the AI's own speech output.
+      formData.append('language', language)
 
       const { data } = await axios.post('/api/transcribe', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
@@ -110,6 +117,10 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
         e.preventDefault()
         if (!isRecording && voiceState === 'idle') {
           startRecording()
+        } else if (isSpeaking) {
+          // Barge-in: stop AI speech and start listening after a short decay
+          stopSpeaking()
+          setTimeout(() => startRecording(), 600)
         }
       }
     }
@@ -128,7 +139,7 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
       window.removeEventListener('keydown', handleKeyDown)
       window.removeEventListener('keyup', handleKeyUp)
     }
-  }, [isOpen, isRecording, voiceState, startRecording, stopRecording])
+  }, [isOpen, isRecording, voiceState, isSpeaking, startRecording, stopRecording, stopSpeaking])
 
   // Reset on close
   useEffect(() => {
@@ -158,7 +169,11 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
 
   const handleMicToggle = () => {
     if (isSpeaking) {
+      // Stop AI speech, then wait for speaker audio to decay before recording.
+      // This prevents Whisper from capturing the AI's voice echo and producing
+      // hallucinated transcriptions (e.g. Korean text from garbled audio).
       stopSpeaking()
+      setTimeout(() => startRecording(), 600)
       return
     }
     if (isRecording) {
