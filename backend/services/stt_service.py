@@ -10,6 +10,11 @@ _openai_client = None
 # hallucinations (e.g. Korean output) when audio is garbled or mixed.
 SUPPORTED_LANGUAGES = {"en", "ar"}
 
+# Whisper's verbose_json response returns the full language name (e.g.
+# "english", "arabic"), not an ISO 639-1 code, so it must be normalised
+# before comparing against SUPPORTED_LANGUAGES.
+LANGUAGE_NAME_TO_CODE = {"english": "en", "arabic": "ar"}
+
 # Whisper sometimes hallucinates non-speech audio as these languages.
 # If detected language is not in SUPPORTED_LANGUAGES, we discard the text.
 HALLUCINATION_FALLBACK = ""
@@ -73,7 +78,8 @@ async def transcribe_audio(
 
             transcript = client.audio.transcriptions.create(**create_kwargs)
 
-        detected_language = getattr(transcript, "language", "en")
+        raw_language = getattr(transcript, "language", "en") or "en"
+        detected_language = LANGUAGE_NAME_TO_CODE.get(raw_language.lower(), raw_language.lower())
         text = transcript.text.strip()
 
         # Guard: if Whisper detected a language we don't support (e.g. Korean
