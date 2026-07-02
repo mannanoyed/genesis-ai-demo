@@ -1,19 +1,23 @@
 import { useState, useRef, useCallback } from 'react'
 
-// Amplitude below which audio is treated as silence.
-// Raised from 0.01 → 0.02 to better reject low-level speaker echo bleed
-// that can occur when the AI is speaking through laptop/phone speakers and
-// the mic picks it up at a low amplitude, causing Whisper hallucinations.
-const SILENCE_THRESHOLD = 0.02
+// Voice activity is measured as time-domain RMS amplitude (0..1), NOT a
+// spectral average. RMS reflects how loud the signal actually is, so the
+// thresholds below behave predictably for real speech. (The previous version
+// averaged getByteFrequencyData across all FFT bins — a value that stays tiny
+// for normal speech because the upper bins are near zero — and set the
+// thresholds so high that legitimate speech was discarded before ever being
+// sent for transcription.)
+//
+// RMS amplitude below which audio is treated as silence.
+const SILENCE_THRESHOLD = 0.015
 const SILENCE_DURATION_MS = 1500
 
-// Minimum average energy a recording must have to be submitted for
-// transcription. Blobs that are almost entirely silence/echo (e.g. captured
-// right after the AI finishes speaking) fall below this and are discarded
-// before hitting the API, saving a round-trip and preventing garbage output.
-const MIN_ENERGY_TO_SUBMIT = 0.015
+// Minimum peak RMS amplitude a recording must reach to be worth transcribing.
+// This still rejects pure-silence / echo-only captures (e.g. the mic opening
+// right after the AI finishes speaking) without swallowing real speech.
+const MIN_ENERGY_TO_SUBMIT = 0.01
 
-export function useAudioRecorder({ onAudioReady, onError }) {
+export function useAudioRecorder({ onAudioReady, onError, onDiscarded }) {
   const [isRecording, setIsRecording] = useState(false)
   const [hasPermission, setHasPermission] = useState(null) // null = unknown, true/false
 
@@ -103,6 +107,10 @@ export function useAudioRecorder({ onAudioReady, onError }) {
           // as Korean or other unexpected languages.
           if (blob.size > 500 && peakEnergyRef.current >= MIN_ENERGY_TO_SUBMIT) {
             onAudioReady?.(blob, mimeType || 'audio/webm')
+          } else {
+            // Capture was too quiet / too short to transcribe. Let the caller
+            // reset UI state (otherwise it stays stuck on "Listening…").
+            onDiscarded?.()
           }
         }
         chunksRef.current = []
@@ -111,15 +119,21 @@ export function useAudioRecorder({ onAudioReady, onError }) {
       recorder.start(100) // Collect data every 100ms
       setIsRecording(true)
 
-      // Silence detection
-      const dataArray = new Uint8Array(analyserRef.current.frequencyBinCount)
+      // Silence detection — time-domain RMS amplitude (0..1)
+      const dataArray = new Uint8Array(analyserRef.current.fftSize)
       let silenceStart = null
 
       silenceCheckRef.current = setInterval(() => {
         if (!analyserRef.current) return
-        analyserRef.current.getByteFrequencyData(dataArray)
-        const avg = dataArray.reduce((a, b) => a + b, 0) / dataArray.length
-        const normalized = avg / 255
+        analyserRef.current.getByteTimeDomainData(dataArray)
+        // Time-domain samples are centered at 128; deviation from center is
+        // the signal. RMS of that deviation is a true loudness measure.
+        let sumSquares = 0
+        for (let i = 0; i < dataArray.length; i++) {
+          const sample = (dataArray[i] - 128) / 128
+          sumSquares += sample * sample
+        }
+        const normalized = Math.sqrt(sumSquares / dataArray.length)
 
         // Track peak energy so we can reject low-energy (echo-only) recordings
         if (normalized > peakEnergyRef.current) {

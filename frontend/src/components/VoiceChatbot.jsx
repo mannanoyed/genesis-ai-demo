@@ -88,6 +88,9 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
       if (err === 'microphone_denied') setMicError(true)
       setVoiceState('idle')
     },
+    // Recording was dropped as too quiet/short — return UI to idle so it
+    // doesn't stay stuck on "Listening…".
+    onDiscarded: () => setVoiceState('idle'),
   })
 
   // Sync voiceState with recording
