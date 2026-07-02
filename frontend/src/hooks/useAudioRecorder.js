@@ -20,6 +20,10 @@ const MIN_ENERGY_TO_SUBMIT = 0.01
 export function useAudioRecorder({ onAudioReady, onError, onDiscarded }) {
   const [isRecording, setIsRecording] = useState(false)
   const [hasPermission, setHasPermission] = useState(null) // null = unknown, true/false
+  // Live, lightly-smoothed input level (0..1) derived from the same RMS loop
+  // used for silence detection. Drives the real-time listening visualization
+  // so the user gets genuine proof the mic is hearing them.
+  const [audioLevel, setAudioLevel] = useState(0)
 
   const mediaRecorderRef = useRef(null)
   const streamRef = useRef(null)
@@ -96,6 +100,7 @@ export function useAudioRecorder({ onAudioReady, onError, onDiscarded }) {
         }
 
         setIsRecording(false)
+        setAudioLevel(0)
 
         if (recorder._autoSubmit !== false && chunksRef.current.length > 0) {
           const blob = new Blob(chunksRef.current, {
@@ -140,6 +145,13 @@ export function useAudioRecorder({ onAudioReady, onError, onDiscarded }) {
           peakEnergyRef.current = normalized
         }
 
+        // Publish a smoothed, gain-mapped level (0..1) for the UI. Speech RMS
+        // typically lands around 0.02–0.20, so we apply gain and clamp to make
+        // normal talking fill the visualization, then ease toward the new value
+        // so the reaction reads premium rather than jittery.
+        const target = Math.min(1, normalized * 6)
+        setAudioLevel(prev => prev + (target - prev) * 0.4)
+
         if (normalized < SILENCE_THRESHOLD) {
           if (!silenceStart) {
             silenceStart = Date.now()
@@ -169,6 +181,7 @@ export function useAudioRecorder({ onAudioReady, onError, onDiscarded }) {
   return {
     isRecording,
     hasPermission,
+    audioLevel,
     startRecording,
     stopRecording,
     toggleRecording,

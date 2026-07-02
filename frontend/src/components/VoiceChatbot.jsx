@@ -82,7 +82,7 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
     }
   }, [sendMessage, speak, language, leadCaptured])
 
-  const { isRecording, hasPermission, startRecording, stopRecording, toggleRecording } = useAudioRecorder({
+  const { isRecording, hasPermission, audioLevel, startRecording, stopRecording, toggleRecording } = useAudioRecorder({
     onAudioReady: handleAudioReady,
     onError: (err) => {
       if (err === 'microphone_denied') setMicError(true)
@@ -316,9 +316,15 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
                 </div>
               </div>
 
-              {/* Audio Visualizer */}
-              <div className="flex-shrink-0 py-6 flex justify-center border-b border-genesis-border bg-genesis-black/30">
-                <AudioVisualizer state={voiceState} />
+              {/* Audio Visualizer — the primary, unified voice control */}
+              <div className="flex-shrink-0 py-8 flex justify-center border-b border-genesis-border bg-genesis-black/30">
+                <AudioVisualizer
+                  state={voiceState}
+                  audioLevel={audioLevel}
+                  onTap={handleMicToggle}
+                  isArabic={isArabic}
+                  disabled={voiceState === 'thinking'}
+                />
               </div>
 
               {/* Conversation transcript */}
@@ -422,52 +428,15 @@ export default function VoiceChatbot({ isOpen, onClose, language, currentVehicle
                 </div>
               )}
 
-              {/* Input area */}
+              {/* Input area — text fallback (voice is the primary control above) */}
               <div className="flex-shrink-0 px-5 py-4 border-t border-genesis-border">
-                {/* Mic button */}
-                <div className="flex justify-center mb-4">
-                  <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    onClick={handleMicToggle}
-                    disabled={voiceState === 'thinking'}
-                    className={`relative w-16 h-16 rounded-full flex items-center justify-center transition-all duration-300 disabled:opacity-50 ${
-                      isRecording
-                        ? 'bg-white shadow-2xl'
-                        : isSpeaking
-                        ? 'bg-genesis-copper shadow-2xl'
-                        : 'bg-genesis-copper/20 border-2 border-genesis-copper hover:bg-genesis-copper/30'
-                    }`}
-                    style={isRecording || isSpeaking ? {
-                      boxShadow: `0 0 0 0 ${isRecording ? 'rgba(255,255,255,0.3)' : 'rgba(196,149,106,0.4)'}`,
-                    } : {}}
-                    title={isArabic ? 'اضغط للتحدث (مفتاح المسافة)' : 'Click to speak (or hold Space)'}
-                  >
-                    {isRecording ? (
-                      <motion.div
-                        animate={{ scale: [1, 1.15, 1] }}
-                        transition={{ duration: 0.8, repeat: Infinity }}
-                      >
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="#0D0D0D">
-                          <rect x="6" y="6" width="12" height="12" rx="2"/>
-                        </svg>
-                      </motion.div>
-                    ) : isSpeaking ? (
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
-                        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>
-                      </svg>
-                    ) : (
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="#C4956A">
-                        <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/>
-                        <path d="M19 10v2a7 7 0 01-14 0v-2H3v2a9 9 0 008 8.94V23h2v-2.06A9 9 0 0021 12v-2h-2z"/>
-                      </svg>
-                    )}
-                  </motion.button>
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="flex-1 h-px bg-genesis-border" />
+                  <p className="text-genesis-muted text-[11px] tracking-widest uppercase">
+                    {isArabic ? 'أو اكتب سؤالك' : 'or type your question'}
+                  </p>
+                  <div className="flex-1 h-px bg-genesis-border" />
                 </div>
-
-                <p className="text-center text-genesis-muted text-xs mb-3 tracking-wider uppercase">
-                  {isArabic ? 'أو اكتب سؤالك' : 'or type your question'}
-                </p>
 
                 {/* Text input */}
                 <div className="flex gap-2">
